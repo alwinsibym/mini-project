@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.register {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+/* Top Courses Section */
+.top-courses {
+    text-align: center;
+    padding: 80px 20px; /* Add padding for top courses */
+    margin-top: 60px; /* Space for fixed navbar */
+}
+
+.top-courses-title {
+    font-size: 2.5em; /* Larger title */
+    margin-bottom: 40px; /* Space below title */
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards */
+}
+
+.course-card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px; /* Increased margin */
+    width: calc(30% - 30px); /* Adjusting for margin */
+    padding: 20px;
+    border-radius: 10px; /* Slightly round corners */
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.course-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Match card corner radius */
+    margin-bottom: 15px; /* Space below thumbnail */
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+}
+
+.instructor-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px; /* Space between image and text */
+}
+
+.course-details h3 {
+    margin: 0 0 5px 0; /* Remove bottom margin */
+    font-size: 1.2em; /* Increased font size for course titles */
+}
+
+.details {
+    color: #555;
+    font-style: italic;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .course-card {
+        width: calc(45% - 30px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .course-card {
+        width: calc(100% - 30px); /* 1 card per row */
+    }
+}

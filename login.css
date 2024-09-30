@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(slider-2-1270288090.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and rest of the navbar */
+    align-items: center;
+    padding: 20px;
+    background-color: transparent; /* Transparent background */
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar .logo:hover {
+    color: #007bff;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.login-form h2 {
+    margin: 0 0 10px;
+    color: #007bff;
+    font-size: 20px;
+}
+
+.login-form p {
+    color: #777;
+    font-size: 14px;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.login-form .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me label {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.login-form button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.signup {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.signup a {
+    color: #007bff;
+    text-decoration: none;
+}
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.footer-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
